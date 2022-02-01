@@ -1,0 +1,32 @@
+.footerBlock {
+    background-color: #e3ffd4;
+    padding: 50px 0;
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerTitle {
+    background-color: azure;
+}
+
+.footerImagesContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px solid;
+    width: 280px;
+}
+
+.footerImages {
+    width: 60px;
+    height: 60px;
+    background-color: bisque;
+    margin: 5px 10px;
+}
+
+.copyright {
+
+}
