@@ -9,17 +9,6 @@
     align-items: center;
 }
 
-.title {
-    background-color: #ffe7d6;
-}
-
-.contactsFormContainer {
-    /* width: 60%;
-     border: 1px solid;
-     display: flex;
-     align-items: center;
-     justify-content: center*/
-}
 
 .contactsForm {
     width: 280px;
@@ -30,6 +19,10 @@
     margin-bottom: 20px;
 }
 
-.contactsInput {
-
+@media screen and (max-width: 351px){
+    .contactsForm {
+        width: 100%;
+    }
 }
+
+

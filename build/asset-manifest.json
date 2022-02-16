@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/github.io/PORTFOLIO/static/css/main.4fc89887.css",
-    "main.js": "/github.io/PORTFOLIO/static/js/main.bf97d71a.js",
-    "static/js/787.1ed0c42c.chunk.js": "/github.io/PORTFOLIO/static/js/787.1ed0c42c.chunk.js",
-    "static/media/project1.png": "/github.io/PORTFOLIO/static/media/project1.65e93e93f2bf56a2edf0.png",
-    "index.html": "/github.io/PORTFOLIO/index.html",
-    "main.4fc89887.css.map": "/github.io/PORTFOLIO/static/css/main.4fc89887.css.map",
-    "main.bf97d71a.js.map": "/github.io/PORTFOLIO/static/js/main.bf97d71a.js.map",
-    "787.1ed0c42c.chunk.js.map": "/github.io/PORTFOLIO/static/js/787.1ed0c42c.chunk.js.map"
+    "main.css": "/myPortfolio/static/css/main.17314551.css",
+    "main.js": "/myPortfolio/static/js/main.ed4efd2d.js",
+    "static/js/787.1ed0c42c.chunk.js": "/myPortfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/project1.png": "/myPortfolio/static/media/project1.65e93e93f2bf56a2edf0.png",
+    "index.html": "/myPortfolio/index.html",
+    "main.17314551.css.map": "/myPortfolio/static/css/main.17314551.css.map",
+    "main.ed4efd2d.js.map": "/myPortfolio/static/js/main.ed4efd2d.js.map",
+    "787.1ed0c42c.chunk.js.map": "/myPortfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4fc89887.css",
-    "static/js/main.bf97d71a.js"
+    "static/css/main.17314551.css",
+    "static/js/main.ed4efd2d.js"
   ]
 }

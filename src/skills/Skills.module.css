@@ -9,9 +9,6 @@
     justify-content: flex-start;
 }
 
-.title {
-    background-color: #a5d5ff;
-}
 
 .skills {
     border: 1px solid;
@@ -20,4 +17,10 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+@media screen and (max-width: 629px){
+    .skills {
+        justify-content: center;
+    }
 }
