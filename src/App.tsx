@@ -6,15 +6,20 @@ import Skills from "./skills/Skills";
 import Projects from "./projects/Projects";
 import Contact from "./contact/Contact";
 import Footer from "./footer/Footer";
+import {NextSection} from "./common/components/NextSection/NextSection";
 
 function App() {
     return (
         <div className="App">
             <Header/>
             <Main/>
+            <NextSection/>
             <Skills/>
+            <NextSection/>
             <Projects/>
+            <NextSection/>
             <Contact />
+            <NextSection/>
             <Footer/>
         </div>
     );

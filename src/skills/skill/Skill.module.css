@@ -16,9 +16,33 @@
 }
 
 .skillTitle {
-    background-color: floralwhite;
+    line-height: 1.2;
+    font-weight: 600;
+    font-family: Jost;
+    color: #0e090d;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 17px;
+    font-size: 30px
 }
 
+@media screen and (max-width: 768px) {
+    skillTitle {
+        font-size: 24px;
+    }
+}
 .skillDescription {
-    background-color: cornsilk;
+    letter-spacing: 0;
+    background: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    outline: none;
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    line-height: 1.37;
+    font-weight: 400;
+    color: #000;
+    word-break: break-word;
 }

@@ -47,3 +47,30 @@
         height: 6px;
     }
 }
+
+.nextSection {
+    width: 100%;
+    float: left;
+    clear: both;
+    height: 40px;
+    position: relative;
+    z-index: 1;
+    height: 40px;
+}
+.nextSection span {
+    display: block;
+    height: 4px;
+    position: relative;
+    top: 50%;
+    margin-top: -2px;
+}
+.nextSection span::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 700%;
+    bottom: 0;
+    background-color: #000;
+}
+

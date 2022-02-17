@@ -3,4 +3,17 @@
     border: 1px solid red;
     display: flex;
     justify-content: space-around;
+    background-color: #090909
+}
+
+.nav a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: uppercase;
+    display: block;
+    position: relative;
+    letter-spacing: 0;
+    font-weight: 400;
 }

@@ -8,9 +8,8 @@ const Main = () => {
         <div className={s.mainBlock}>
             <div className={`${styleContainer.container} ${s.mainContainer}`}>
                 <div className={s.greeting}>
-                    <span>Hi There</span>
-                    <h3>I'm Natalia Zakrevskaya</h3>
-                    <p>Front-end developer.</p>
+                    <h3>Front-end developer</h3>
+                    <p>Professional UI/UX designer and web developer based on London. Sometimes works as a freelancer.</p>
                 </div>
                 <div className={s.photo}></div>
             </div>
