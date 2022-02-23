@@ -1,6 +1,5 @@
 .skill {
     width: 250px;
-    background-color: yellow;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,19 +29,4 @@
     skillTitle {
         font-size: 24px;
     }
-}
-.skillDescription {
-    letter-spacing: 0;
-    background: transparent;
-    border: 0;
-    margin: 0;
-    padding: 0;
-    vertical-align: baseline;
-    outline: none;
-    font-family: Helvetica, sans-serif;
-    font-size: 22px;
-    line-height: 1.37;
-    font-weight: 400;
-    color: #000;
-    word-break: break-word;
 }

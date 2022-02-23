@@ -11,15 +11,18 @@ const Skills = () => {
             <div className={`${styleContainer.container} ${s.skillsContainer}`}>
                 <Title text={'My Skills'}/>
                 <div className={s.skills}>
-                    <Skill title="JS" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua Ut enim..."/>
-                    <Skill title="CSS" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua Ut enim..."/>
-                    <Skill title="REACT" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua Ut enim..."/>
+                    <Skill title="JAVASCRIPT"/>
+                    <Skill title="CSS3"/>
+                    <Skill title="REACT"/>
+                    <Skill title="REDUX"/>
+                    <Skill title="TYPESCRIPT"/>
+                    <Skill title="HTML5"/>
+                    <Skill title="ES6"/>
+                    <Skill title="STORYBOOK"/>
+                    <Skill title="MATERIAL UI"/>
+                    <Skill title="AXIOS"/>
+                    <Skill title="REST API"/>
+                    <Skill title="GIT"/>
                 </div>
             </div>
         </div>

@@ -1,5 +1,4 @@
 .contactsBlock {
-    background-color: #ffd7c1;
     padding: 50px 0;
 }
 
@@ -74,7 +73,7 @@
 }
 
 .activeInputContainer input {
-    position: relative;
+/*    position: relative;
     z-index: 3;
     width: 100%;
     display: block;
@@ -93,11 +92,11 @@
     vertical-align: middle;
     transition: all .3s ease;
     outline: none;
-    border-color: #ffcc0d;
+    border-color: #ffcc0d;*/
 }
 
 .activeInputContainer span {
-    position: absolute;
+/*    position: absolute;
     left: 0;
     font-size: 22px;
     padding: 0;
@@ -119,6 +118,40 @@
     margin-left: 10px;
     top: 0;
     height: 25px;
-    line-height: 25px;
+    line-height: 25px;*/
 }
 
+.contactsContainer button {
+    display: block;
+    line-height: 26px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 20px 20px;
+    background-color: var(--main-color);
+    color: var(--text-color-for-main-bg);
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid var(--main-color);
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.contactsContainer button:hover {
+    display: block;
+    line-height: 26px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 20px 20px;
+    background-color: white;
+    color: #ffcc0d;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid var(--main-color);
+}

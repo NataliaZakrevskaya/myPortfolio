@@ -2,12 +2,18 @@
   box-sizing: border-box;
 }
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Jost,Arial,Helvetica,sans-serif;
+  font-size: 22px;
+  line-height: 1.37;
+  letter-spacing: 0;
+  font-weight: 400;
+  color: #000;
+  word-break: break-word;
+}
+
+:root {
+  --main-color: #ffcc0d;
+  --text-color-for-main-bg: #000;
 }
 
 code {

@@ -1,12 +1,22 @@
 .nav {
-    width: 300px;
-    border: 1px solid red;
+    width: 400px;
     display: flex;
     justify-content: space-around;
     background-color: #090909
 }
 
 .nav a {
+    text-decoration: none;
+    color:#9c9ca2;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: uppercase;
+    display: block;
+    position: relative;
+    letter-spacing: 0;
+    font-weight: 400;
+}
+.nav a:hover {
     text-decoration: none;
     color: #ccc;
     font-size: 18px;
