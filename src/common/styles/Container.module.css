@@ -58,9 +58,25 @@
     clear: both;
     height: 40px;
     position: relative;
-    z-index: 1;
+}
+
+.nextSectionContainer {
+    position: relative;
     height: 40px;
 }
+
+@media screen and (max-width: 480px) {
+    .nextSectionContainer {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .nextSectionContainer {
+        padding: 0 20px;
+    }
+}
+
 .nextSection span {
     display: block;
     height: 4px;

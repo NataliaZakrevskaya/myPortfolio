@@ -11,16 +11,20 @@ import {NextSection} from "./common/components/NextSection/NextSection";
 function App() {
     return (
         <div className="App">
-            <Header/>
-            <Main/>
-            <NextSection/>
-            <Skills/>
-            <NextSection/>
-            <Projects/>
-            <NextSection/>
-            <Contact />
-            <NextSection/>
-            <Footer/>
+            <div className="Wrapper">
+                <Header/>
+                <div className="Content">
+                    <Main/>
+                    <NextSection/>
+                    <Skills/>
+                    <NextSection/>
+                    <Projects/>
+                    <NextSection/>
+                    <Contact/>
+                    <NextSection/>
+                    <Footer/>
+                </div>
+            </div>
         </div>
     );
 }

@@ -1,4 +1,22 @@
 .App {
-
+    width: 100%;
+    float: left;
+    clear: both;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
 }
 
+.Wrapper {
+    width: 100%;
+    float: left;
+    clear: both;
+}
+
+.Content {
+    width: 100%;
+    float: left;
+    clear: both;
+    position: relative;
+    transition: padding .5s ease;
+}
