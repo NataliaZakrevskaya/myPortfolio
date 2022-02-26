@@ -1,5 +1,5 @@
 .projectContainer {
-    width: 350px;
+    width: 450px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,8 +77,8 @@
     padding: 0;
     vertical-align: baseline;
     outline: none;
-    font-family: Helvetica, sans-serif;
-    font-size: 22px;
+    font-family: Jost, sans-serif;
+    font-size: 18px;
     line-height: 1.37;
     font-weight: 400;
     color: #000;

@@ -17,16 +17,7 @@ const Contact = () => {
             <div className={`${styleContainer.container} ${s.contactsContainer}`}>
                 <Title text={'Contact'}/>
                 <form className={s.contactsForm}>
-                    {state
-                    ? <div className={s.activeInputContainer}>
-                            <input type={"text"}/>
-                            <span>Name</span>
-                        </div>
-                    : <div className={s.inputContainer}>
-                            <input onClick={onClickHandler} type={"text"}/>
-                            <span>Name</span>
-                        </div>
-                    }
+                    <input className={s.contactsInput} type={"text"} value={"Name"}/>
                     <input className={s.contactsInput} type={"text"} value={"E-mail"}/>
                     <textarea className={s.contactsTextarea} value={"Your message"}></textarea>
                 </form>

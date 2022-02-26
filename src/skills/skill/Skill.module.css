@@ -8,11 +8,16 @@
     box-sizing: border-box;
 }
 
-.icon {
-    width: 60px;
+.skill img {
+    width: 70px;
+    height: 70px;
+}
+
+/*.icon {
+    width: 70px;
     height: 60px;
     background-color: bisque;
-}
+}*/
 
 .skillTitle {
     line-height: 1.2;

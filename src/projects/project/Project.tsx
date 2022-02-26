@@ -11,7 +11,7 @@ const Poject = (props: ProjectPropsType) => {
     return (
         <div className={s.projectContainer}>
             <div className={s.projectImageContainer}>
-                <a href={''} className={s.projectLink}>Посмотреть</a>
+                <a href={''} className={s.projectLink}>See</a>
             </div>
             <h3 className={s.projectTitle}>{props.title}</h3>
             <span className={s.projectDescription}>
