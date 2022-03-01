@@ -17,8 +17,11 @@ const Contact = () => {
             <div className={`${styleContainer.container} ${s.contactsContainer}`}>
                 <Title text={'Contact'}/>
                 <form className={s.contactsForm}>
-                    <input className={s.contactsInput} type={"text"} value={"Name"}/>
-                    <input className={s.contactsInput} type={"text"} value={"E-mail"}/>
+                    <div className={s.nameEmailContainer}>
+                        <input className={s.contactsInput} type={"text"} value={"Name"}/>
+                        <input className={s.contactsInput} type={"text"} value={"E-mail"}/>
+                    </div>
+                    <input className={s.contactsInput} type={"text"} value={"Phone"}/>
                     <textarea className={s.contactsTextarea} value={"Your message"}></textarea>
                 </form>
                 {/*</div>*/}

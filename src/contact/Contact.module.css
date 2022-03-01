@@ -10,7 +10,7 @@
 
 
 .contactsForm {
-    width: 280px;
+    width: 700px;
     border: 1px solid;
     display: flex;
     flex-direction: column;
@@ -24,25 +24,27 @@
     }
 }
 
+.nameEmailContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nameEmailContainer input {
+    width: 330px;
+}
 
 .contactsInput {
-    position: relative;
-    z-index: 3;
     width: 100%;
     display: block;
-    border-radius: 1px;
     border: 2px solid #000;
     color: #000;
-    font-size: 22px;
-    outline: none;
-    padding: 0 30px !important;
+    font-size: 18px;
+    padding: 0 20px !important;
     line-height: 70px;
-    height: 70px;
-    letter-spacing: 0.5px;
-    box-sizing: border-box;
+    height: 55px;
     font-family: Jost, sans-serif;
-    vertical-align: middle;
-    transition: all .3s ease;
+    margin-bottom: 12px;
 }
 
 .contactsContainer button {
