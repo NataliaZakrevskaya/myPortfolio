@@ -21,10 +21,17 @@
     font-family: Jost;
     text-transform: uppercase;
     line-height: 1;
-    padding-bottom: 29px;
+    padding-bottom: 18px;
     position: relative;
     left: -5px;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
+    margin-top: 84px;
+}
+
+@media screen and (max-width: 1120px) {
+    .title {
+        font-size: 33px;
+    }
 }
 
 .title h3 {
@@ -38,23 +45,24 @@
     position: absolute;
     bottom: 0;
     left: 5px;
-    width: 200px;
-    height: 10px;
+    width: 162px;
+    height: 8px;
     background-color: #000;
     left: 50%;
     transform: translate(-50%, 50%);
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1120px) {
     .title h3:after {
-        width: 150px;
-        height: 6px;
+        width: 118px;
+        height: 5px;
     }
 }
 
 .nextSection {
     width: 90%;
     margin: 0 auto;
+    margin-top: 78px;
     height: 40px;
     position: relative;
 }
@@ -73,7 +81,7 @@
 
 .nextSection span {
     display: block;
-    height: 4px;
+    height: 3px;
     position: relative;
     top: 50%;
     margin-top: -2px;

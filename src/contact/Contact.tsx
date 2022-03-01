@@ -18,14 +18,14 @@ const Contact = () => {
                 <Title text={'Contact'}/>
                 <form className={s.contactsForm}>
                     <div className={s.nameEmailContainer}>
-                        <input className={s.contactsInput} type={"text"} value={"Name"}/>
-                        <input className={s.contactsInput} type={"text"} value={"E-mail"}/>
+                        <input className={s.contactsInput} type={"text"} value={"Name *"}/>
+                        <input className={s.contactsInput} type={"text"} value={"E-mail *"}/>
                     </div>
                     <input className={s.contactsInput} type={"text"} value={"Phone"}/>
-                    <textarea className={s.contactsTextarea} value={"Your message"}></textarea>
+                    <textarea className={s.contactsTextarea} value={"Message"}></textarea>
                 </form>
                 {/*</div>*/}
-                <button>SEND</button>
+                <button>SEND message</button>
             </div>
         </div>
     )

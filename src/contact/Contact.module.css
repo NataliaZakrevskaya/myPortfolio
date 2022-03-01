@@ -10,8 +10,7 @@
 
 
 .contactsForm {
-    width: 700px;
-    border: 1px solid;
+    width: 650px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -31,7 +30,7 @@
 }
 
 .nameEmailContainer input {
-    width: 330px;
+    width: 317px;
 }
 
 .contactsInput {
@@ -44,19 +43,32 @@
     line-height: 70px;
     height: 55px;
     font-family: Jost, sans-serif;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
+}
+
+.contactsForm textarea {
+    width: 100%;
+    display: block;
+    border: 2px solid #000;
+    color: #000;
+    font-size: 18px;
+    padding: 0 20px !important;
+    line-height: 70px;
+    font-family: Jost, sans-serif;
+    height: 160px;
 }
 
 .contactsContainer button {
     display: block;
+    width: 650px;
     line-height: 26px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    padding: 20px 20px;
+    padding: 13px 20px;
     background-color: var(--main-color);
     color: var(--text-color-for-main-bg);
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 600;
     text-transform: uppercase;
     text-align: center;
@@ -71,10 +83,10 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    padding: 20px 20px;
+    padding: 13px 20px;
     background-color: white;
     color: #ffcc0d;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 600;
     text-transform: uppercase;
     text-align: center;
