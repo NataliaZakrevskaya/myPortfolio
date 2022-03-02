@@ -10,6 +10,7 @@ import {NextSection} from "./common/components/NextSection/NextSection";
 
 function App() {
     return (
+
         <div className="App">
             <div className="Wrapper">
                 <Header/>
