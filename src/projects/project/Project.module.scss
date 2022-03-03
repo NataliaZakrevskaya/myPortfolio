@@ -25,11 +25,17 @@
       position: absolute;
       content: '';
       background-color: black;
-      top:0;
+      top: 0;
       bottom: 0;
       left: 0;
       right: 0;
       opacity: 0.1;
+
+    }
+
+    &:hover {
+      background-color: white;
+      opacity: 0.9;
     }
 
     .projectLink {
@@ -84,7 +90,7 @@
   }
 
   .projectDescription {
-    @include text ($fontFamily, 18px, 1.37, 400);
+    @include text($fontFamily, 18px, 1.37, 400);
     letter-spacing: 0;
     background: transparent;
     border: 0;
