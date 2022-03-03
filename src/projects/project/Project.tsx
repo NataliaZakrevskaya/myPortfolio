@@ -1,21 +1,21 @@
-import React from 'react';
+import React, {CSSProperties} from 'react';
 import s from "./Project.module.scss";
-import project1 from "./project1.png"
 
 type ProjectPropsType = {
     title: string
     description: string
+    style: CSSProperties | undefined
 }
 
-const Poject = (props: ProjectPropsType) => {
+const Poject = ({title, description, style}: ProjectPropsType) => {
     return (
         <div className={s.projectContainer}>
-            <div className={s.projectImageContainer}>
+            <div className={s.projectImage} style={style}>
                 <a href={''} className={s.projectLink}>See</a>
             </div>
-            <h3 className={s.projectTitle}>{props.title}</h3>
+            <h3 className={s.projectTitle}>{title}</h3>
             <span className={s.projectDescription}>
-                {props.description}
+                {description}
             </span>
         </div>
     );

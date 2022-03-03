@@ -8,8 +8,7 @@
   align-items: center;
   text-align: center;
 
-  .projectImageContainer {
-    background-image: url("./project1.png");
+  .projectImage {
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -17,6 +16,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: '';
+      background-color: black;
+      top:0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.1;
+    }
 
     .projectLink {
       display: block;
@@ -34,6 +45,8 @@
       text-decoration: none;
       border: 2px solid $mainColor;
       transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+      position: relative;
+      z-index: 1;
 
       &:hover {
         display: block;
@@ -50,6 +63,8 @@
         text-align: center;
         text-decoration: none;
         border: 2px solid $mainColor;
+        position: relative;
+        z-index: 1;
       }
     }
   }
