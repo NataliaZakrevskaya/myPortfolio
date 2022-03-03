@@ -1,5 +1,5 @@
 import React from 'react';
-import s from "./Main.module.css";
+import s from "./Main.module.scss";
 import styleContainer from "../common/styles/Container.module.css"
 import sign from "../common/assets/sign.jpg"
 import mainPhoto from "../common/assets/mainPhoto.jpg"
@@ -11,8 +11,6 @@ const Main = () => {
             <div className={`${styleContainer.container} ${s.mainContainer}`}>
                 <div className={s.photoContainer}>
                     <div className={s.photoBlock}>
-                        {/*<div className={s.layerBorder}><img src={mainPhoto}/></div>
-                        <div className={s.holderBorder}><img src={mainPhoto}/></div>*/}
                     <img src={mainPhoto}/>
                     </div>
                     <div className={s.dotsLayer}></div>
