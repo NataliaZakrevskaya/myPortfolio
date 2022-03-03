@@ -1,0 +1,61 @@
+@import "./../common/styles/sass/Mixins";
+@import "./../common/styles/sass/Variables";
+
+.footerBlock {
+  padding: 50px 0;
+  text-align: center;
+
+  .footerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .title {
+      @include text ('Jost', 50px, 1, 600);
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      @media screen and (max-width: 1120px) {
+          font-size: 33px;
+      }
+    }
+
+    .footerLinksContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 300px;
+
+      & a {
+        display: block;
+        padding: 5px;
+        width: 45px;
+        height: 45px;
+        border: 2px solid #000;
+        color: $textColor;
+        text-decoration: none;
+        position: relative;
+        margin-bottom: 10px;
+
+        & img {
+          width: 30px;
+          height: 30px;
+        }
+      }
+
+      & a:hover {
+        background-color: white;
+        color: $mainColor;
+        border: 2px solid $mainColor;
+      }
+    }
+    .copyright {
+      @include text ($fontFamily, 18px, 1.37, 400);
+      letter-spacing: 0;
+      background: transparent;
+      vertical-align: baseline;
+      outline: none;
+      word-break: break-word;
+    }
+  }
+
+}

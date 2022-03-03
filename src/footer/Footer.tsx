@@ -1,12 +1,12 @@
 import React from 'react';
 import styleContainer from "../common/styles/Container.module.css";
-import s from './Footer.module.css';
+import s from './Footer.module.scss';
 
 const Footer = () => {
     return (
         <div className={s.footerBlock}>
             <div className={`${styleContainer.container} ${s.footerContainer}`}>
-                <h3 className={`${styleContainer.title} ${s.footerTitle}`}>Natalia Zakrevskaya</h3>
+                <h3 className={s.title}>Natalia Zakrevskaya</h3>
                 <div className={s.footerLinksContainer}>
                     <a href={'https://www.linkedin.com/in/natasha-zakrevskaya/'} className={s.footerImages}>
                         <img src={'https://www.svgrepo.com/show/332442/linkedin.svg'}/>
