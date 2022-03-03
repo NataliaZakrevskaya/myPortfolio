@@ -1,0 +1,31 @@
+@import "./../../common/styles/sass/Mixins";
+@import "./../../common/styles/sass/Variables";
+
+.skill {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    & img {
+        width: 70px;
+        height: 70px;
+    }
+    .skillTitle {
+        @include text ('Jost', 30px, 1.2, 600);
+        margin: 0;
+        padding: 0;
+        margin-bottom: 17px;
+        @media screen and (max-width: 768px) {
+                font-size: 24px;
+        }
+    }
+}
+
+
+
+
+
+
