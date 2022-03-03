@@ -1,6 +1,6 @@
 import React from 'react';
 import s from "./Main.module.scss";
-import styleContainer from "../common/styles/Container.module.css"
+import styleContainer from "../common/styles/Container.module.scss"
 import sign from "../common/assets/sign.jpg"
 import mainPhoto from "../common/assets/mainPhoto.jpg"
 

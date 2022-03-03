@@ -1,5 +1,5 @@
 import React from 'react';
-import styleContainer from "./../../styles/Container.module.css"
+import styleContainer from "../../styles/Container.module.scss"
 
 type TitlePropsType = {
     text: string
