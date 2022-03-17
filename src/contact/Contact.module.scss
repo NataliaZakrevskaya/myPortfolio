@@ -5,23 +5,17 @@
   padding: 50px 0;
 
   .contactsContainer {
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    @include flex (column, space-around, center);
 
     .contactsForm {
+      @include flex (column, space-between, center);
       max-width: 650px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
       @media screen and (max-width: 634px) {
         width: 98%;
       }
 
       .nameEmailContainer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        @include flex (row, space-between, center);
         @media screen and (max-width: 634px) {
           flex-direction: column;
         }
@@ -36,11 +30,10 @@
 
       .contactsInput {
         @include text($fontFamily, 18px, 70px, 100);
-        width: 100%;
+        @include size(100%, 55px);
         display: block;
         border: 2px solid #000;
         padding: 0 20px !important;
-        height: 55px;
         margin-bottom: 16px;
       }
 

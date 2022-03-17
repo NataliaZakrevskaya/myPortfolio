@@ -1,16 +1,15 @@
+@import './../common/styles/sass/Mixins';
+
 .skillsBlock {
   padding: 50px 0;
 
   .skillsContainer {
-    align-items: center;
-    flex-direction: column;
-    justify-content: flex-start;
+    @include flex (column, flex-start, center);
 
     .skills {
+      @include flex (row, space-between, center);
       box-sizing: border-box;
       width: 100%;
-      display: flex;
-      justify-content: space-between;
       flex-wrap: wrap;
       @media screen and (max-width: 629px) {
         justify-content: center;

@@ -7,3 +7,14 @@
   line-height: $lineHeight;
   font-weight: $fontWeight;
 }
+@mixin flex ($flexDirection, $justifyContent, $alignItems) {
+  display: flex;
+  flex-direction: $flexDirection;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+}
+
+@mixin size ($width, $height){
+  width: $width;
+  height: $height;
+}

@@ -1,0 +1,7 @@
+@import "./src/common/styles/sass/Mixins.scss";
+
+.header {
+    @include flex (row, flex-end, center);
+    @include size (100%, 80px);
+    background-color: black;
+}

@@ -19,23 +19,23 @@ import git from "./../common/assets/icons/git.png"
 const Skills = () => {
     return (
         <div className={s.skillsBlock}>
-            <div className={`${styleContainer.container} ${s.skillsContainer}`}>
-                <Title text={'My Skills'}/>
-                <div className={s.skills}>
-                    <Skill title="JAVASCRIPT" icon={js} />
-                    <Skill title="CSS3" icon={css3} />
-                    <Skill title="REACT" icon={reactIcon} />
-                    <Skill title="REDUX" icon={reduxIcon} />
-                    <Skill title="TYPESCRIPT" icon={ts}/>
-                    <Skill title="HTML5" icon={html5}/>
-                    <Skill title="ES6" icon={es6Icon}/>
-                    <Skill title="STORYBOOK" icon={storybookIcon}/>
-                    <Skill title="MATERIAL UI" icon={materialUi}/>
-                    <Skill title="AXIOS" icon={axoisIcon} />
-                    <Skill title="REST API" icon={restApi} />
-                    <Skill title="GIT" icon={git} />
+                <div className={`${styleContainer.container} ${s.skillsContainer}`}>
+                    <Title text={'My Skills'}/>
+                    <div className={s.skills}>
+                        <Skill title="JAVASCRIPT" icon={js}/>
+                        <Skill title="CSS3" icon={css3}/>
+                        <Skill title="REACT" icon={reactIcon}/>
+                        <Skill title="REDUX" icon={reduxIcon}/>
+                        <Skill title="TYPESCRIPT" icon={ts}/>
+                        <Skill title="HTML5" icon={html5}/>
+                        <Skill title="ES6" icon={es6Icon}/>
+                        <Skill title="STORYBOOK" icon={storybookIcon}/>
+                        <Skill title="MATERIAL UI" icon={materialUi}/>
+                        <Skill title="AXIOS" icon={axoisIcon}/>
+                        <Skill title="REST API" icon={restApi}/>
+                        <Skill title="GIT" icon={git}/>
+                    </div>
                 </div>
-            </div>
         </div>
     );
 }
