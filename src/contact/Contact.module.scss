@@ -16,6 +16,7 @@
 
       .nameEmailContainer {
         @include flex (row, space-between, center);
+        width: 100%;
         @media screen and (max-width: 634px) {
           flex-direction: column;
         }

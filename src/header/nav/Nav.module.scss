@@ -1,0 +1,32 @@
+@import "../../common/styles/sass/Mixins";
+
+.nav {
+  @include flex(row, space-around, center);
+  width: 400px;
+  background-color: #090909;
+  @media screen and (max-width: 400px) {
+    display: none;
+  }
+
+  & a {
+    @include text(Arial, 18px, 27px, 400);
+    text-decoration: none;
+    color: #9c9ca2;
+    text-transform: uppercase;
+    display: block;
+    position: relative;
+    letter-spacing: 0;
+
+    &:hover {
+      color: #ccc;
+    }
+  }
+
+  .active {
+    color: aqua;
+  }
+}
+
+
+
+

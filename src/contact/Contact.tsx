@@ -10,7 +10,7 @@ const Contact = () => {
 
 
     return (
-        <div className={s.contactsBlock}>
+        <div id={'contact'} className={s.contactsBlock}>
             <div className={`${styleContainer.container} ${s.contactsContainer}`}>
                 <Title text={'Contact'}/>
                 <Tada>

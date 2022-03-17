@@ -6,7 +6,7 @@ import mainPhoto from "../common/assets/mainPhoto.jpg"
 
 const Main = () => {
     return (
-        <div className={s.mainBlock}>
+        <div id={'main'} className={s.mainBlock}>
             <div className={`${styleContainer.container} ${s.mainContainer}`}>
 
                     <div className={s.photoContainer}>

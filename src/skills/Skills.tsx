@@ -18,7 +18,7 @@ import git from "./../common/assets/icons/git.png"
 
 const Skills = () => {
     return (
-        <div className={s.skillsBlock}>
+        <div id={'skills'} className={s.skillsBlock}>
                 <div className={`${styleContainer.container} ${s.skillsContainer}`}>
                     <Title text={'My Skills'}/>
                     <div className={s.skills}>
