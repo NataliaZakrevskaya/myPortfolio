@@ -1,8 +1,17 @@
 import React, {useState} from 'react';
 import s from "./BurgerNav.module.scss";
 import {Link} from "react-scroll";
+import menuImg from "./../../common/assets/burgerNav/menu.png"
+import closeImg from "./../../common/assets/burgerNav/close.png"
 
 export const BurgerNav = () => {
+
+    const menu = {
+        backgroundImage: `url(${menuImg})`
+    }
+    const close = {
+        backgroundImage: `url(${closeImg})`
+    }
 
     const [editMode, setEditMode] = useState<boolean>(false)
 
@@ -20,7 +29,7 @@ export const BurgerNav = () => {
                     to="main"
                     spy={true}
                     smooth={true}
-                    offset={40}
+                    offset={-60}
                     duration={500}
                 >Main</Link>
                 <Link
@@ -28,7 +37,7 @@ export const BurgerNav = () => {
                     to="skills"
                     spy={true}
                     smooth={true}
-                    offset={40}
+                    offset={-60}
                     duration={500}
                 >Skills</Link>
                 <Link
@@ -36,7 +45,7 @@ export const BurgerNav = () => {
                     to="projects"
                     spy={true}
                     smooth={true}
-                    offset={60}
+                    offset={-60}
                     duration={500}
                 >Projects</Link>
                 <Link
@@ -44,11 +53,11 @@ export const BurgerNav = () => {
                     to="contact"
                     spy={true}
                     smooth={true}
-                    offset={1}
+                    offset={-60}
                     duration={500}
                 >Contact</Link>
             </div>
-            <div onClick={onClickHandler} className={s.burgerButton}></div>
+            <div onClick={onClickHandler} style={editMode? close : menu} className={s.burgerButton}></div>
         </div>
     );
 };

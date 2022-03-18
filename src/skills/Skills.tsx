@@ -15,6 +15,12 @@ import materialUi from "./../common/assets/icons/material-ui.png"
 import axoisIcon from "./../common/assets/icons/axios.png"
 import restApi from "./../common/assets/icons/api.png"
 import git from "./../common/assets/icons/git.png"
+import formik from "./../common/assets/icons/formik.png"
+import sass from "./../common/assets/icons/sass.png"
+import github from "./../common/assets/icons/github.png"
+import postman from "./../common/assets/icons/postman.png"
+import yarn from "./../common/assets/icons/yarn.png"
+import nodenmIcon from "./../common/assets/icons/npmImg.webp"
 
 const Skills = () => {
     return (
@@ -34,6 +40,12 @@ const Skills = () => {
                         <Skill title="AXIOS" icon={axoisIcon}/>
                         <Skill title="REST API" icon={restApi}/>
                         <Skill title="GIT" icon={git}/>
+                        <Skill title="FORMIK" icon={formik}/>
+                        <Skill title="SASS" icon={sass}/>
+                        <Skill title="GITHUB" icon={github}/>
+                        <Skill title="POSTMAN" icon={postman}/>
+                        <Skill title="YARN" icon={yarn}/>
+                        <Skill title="YARN" icon={nodenmIcon}/>
                     </div>
                 </div>
         </div>

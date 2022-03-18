@@ -1,19 +1,23 @@
 @import "../../common/styles/sass/Mixins";
+@import "../../common/styles/sass/Variables";
 
 .burgerNav {
   width: 100%;
-  height: 100%;
-  position: relative;
   @media screen and (min-width: 400px) {
     display: none;
   }
 
   .burgerNavItems {
-    background-color: aqua;
+    @include flex(column, space-between, center);
+    background-color: black;
     position: absolute;
     right: 0;
-    top: 60px;
-    display: none;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    transform: translate(0, -130px);
+    transition: 0.7s;
+    height: 0;
 
     a {
       @include text(Arial, 18px, 27px, 400);
@@ -27,20 +31,22 @@
       }
     }
     .active {
-      color: aqua;
+      color: $mainColor;
     }
   }
   .show {
-    @include flex(column, space-between, center);
+    height: 130px;
+    transform: translate(0, 0);
   }
 
   .burgerButton {
     width: 30px;
     height: 30px;
-    background-color: #9c9ca2;
+    background-size: cover;
+    background-position: center;
     position: absolute;
-    top: 30px;
-    right: 10px;
+    top: 15px;
+    right: 26px;
   }
 }
 

@@ -3,14 +3,15 @@
 
 .skill {
     @include flex(column, center, center);
-    width: 250px;
+    width: 200px;
     padding: 20px;
     box-sizing: border-box;
     & img {
-        @include size(70px, 70px);
+        @include size(60px, 60px);
+        margin-bottom: 10px;
     }
     .skillTitle {
-        @include text ('Jost', 30px, 1.2, 600);
+        @include text ('Jost', 20px, 1.2, 600);
         padding: 0;
         margin-bottom: 17px;
         @media screen and (max-width: 768px) {
