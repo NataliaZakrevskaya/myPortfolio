@@ -23,7 +23,7 @@ const Contact = () => {
                 phone: value.phone,
                 message: value.message,})
             formik.resetForm()
-            axios.post("http://localhost:3010/sendMessage", {
+            axios.post("https://smtp-nodejs-server2022.herokuapp.com/sendMessage", {
                 name: value.name,
                 email: value.email,
                 phone: value.phone,
