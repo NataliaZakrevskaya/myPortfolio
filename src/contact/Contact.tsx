@@ -1,31 +1,71 @@
-import React, {useState} from 'react';
+import React from 'react';
 import s from './Contact.module.scss';
 import styleContainer from "../common/styles/Container.module.scss";
 import Title from "../common/components/Title/Title";
+import axios from 'axios';
 // @ts-ignore
 import Tada from 'react-reveal/Tada';
+import {useFormik} from "formik";
 
 
 const Contact = () => {
 
-    const [name, setName] = useState<string>('Name *')
-    const [email, setEmail] = useState<string>('E-mail *')
-    const [phone, setPhone] = useState<string>('Phone')
-    const [message, setMessage] = useState<string>('Message')
+    const formik = useFormik({
+        initialValues: {
+            name: '',
+            email: '',
+            phone: '',
+            message: '',
+        },
+        onSubmit: value => {
+            console.log({name: value.name,
+                email: value.email,
+                phone: value.phone,
+                message: value.message,})
+            formik.resetForm()
+            axios.post("http://localhost:3010/sendMessage", {
+                name: value.name,
+                email: value.email,
+                phone: value.phone,
+                message: value.message,
+            })
+                .then(() => {
+                    alert('Your message has been sent')
+                })
+        }
+    })
 
     return (
         <div id={'contact'} className={s.contactsBlock}>
             <div className={`${styleContainer.container} ${s.contactsContainer}`}>
                 <Title text={'Contact'}/>
                 <Tada>
-                    <form className={s.contactsForm}>
+                    <form className={s.contactsForm} onSubmit={formik.handleSubmit}>
                         <div className={s.nameEmailContainer}>
-                            <input onChange={(e)=>{setName(e.currentTarget.value)}} className={s.contactsInput} type={"text"} value={name}/>
-                            <input onChange={(e)=>{setEmail(e.currentTarget.value)}} className={s.contactsInput} type={"text"} value={email}/>
+                            <input
+                                className={s.contactsInput}
+                                type={"text"}
+                                placeholder={"Name"}
+                                {...formik.getFieldProps('name')}
+                            />
+                            <input
+                                className={s.contactsInput}
+                                type={"text"}
+                                placeholder={"Email"}
+                                {...formik.getFieldProps('email')}
+                            />
                         </div>
-                        <input onChange={(e)=>{setPhone(e.currentTarget.value)}} className={s.contactsInput} type={"text"} value={phone}/>
-                        <textarea onChange={(e)=>{setMessage(e.currentTarget.value)}} value={message}></textarea>
-                        <button>SEND message</button>
+                        <input
+                            className={s.contactsInput}
+                            type={"text"}
+                            placeholder={"Phone"}
+                            {...formik.getFieldProps('phone')}
+                        />
+                        <textarea
+                            placeholder={"Your message"}
+                            {...formik.getFieldProps('message')}
+                        ></textarea>
+                        <button type={'submit'}>SEND message</button>
                     </form>
                 </Tada>
             </div>
