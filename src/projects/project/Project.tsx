@@ -5,16 +5,17 @@ import Pulse from 'react-reveal/Pulse';
 
 type ProjectPropsType = {
     title: string
+    href: string
     description: string
     style: CSSProperties | undefined
 }
 
-const Poject = ({title, description, style}: ProjectPropsType) => {
+const Poject = ({title, href, description, style}: ProjectPropsType) => {
     return (
         <div className={s.projectContainer}>
             <Pulse>
                 <div className={s.projectImage} style={style}>
-                    <a href={''} className={s.projectLink}>See</a>
+                    <a href={href} className={s.projectLink} target="_blank">See</a>
                 </div>
                 <h3 className={s.projectTitle}>{title}</h3>
                 <span className={s.projectDescription}>

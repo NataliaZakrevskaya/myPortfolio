@@ -32,6 +32,7 @@ const Contact = () => {
                 .then(() => {
                     alert('Your message has been sent')
                 })
+            //axios.get("https://smtp-nodejs-server2022.herokuapp.com/").then(res => console.log(res))
         }
     })
 

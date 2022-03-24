@@ -11,6 +11,9 @@ import Slide from 'react-reveal/Slide';
 
 const Projects = () => {
 
+    const hrefForSocialNetwork = 'https://nataliazakrevskaya.github.io/SocialNetwork/'
+    const hrefForTodoList = 'https://nataliazakrevskaya.github.io/todo-list/'
+
     const socialNetwork = {
         backgroundImage: `url(${socialImg})`
     }
@@ -26,6 +29,7 @@ const Projects = () => {
                         <Project
                             style={socialNetwork}
                             title="Social Network"
+                            href={hrefForSocialNetwork}
                             description="A social network is a website that
                         allows people with similar interests
                         to come together and share information, photos and videos."
@@ -33,6 +37,7 @@ const Projects = () => {
                         <Project
                             style={todoList}
                             title="Todo list"
+                            href={hrefForTodoList}
                             description="What is a ToDo List?
                     The definition is a simple one. It's a list of tasks you need
                     to complete, or things that you want to do. Most typically,
